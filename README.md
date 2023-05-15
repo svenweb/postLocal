@@ -4,3 +4,5 @@ The API will take input of text and images for supported Items, and produce a li
 
 More documentation to come as we begin the development.
 
+- Source files contained in src/
+- Integration tests contained in tests/
