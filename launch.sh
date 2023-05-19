@@ -17,6 +17,12 @@ then
 elif [ "$1" == "run" ]
 then
   python3 src/main.py
+elif [ "$1" == "clean" ]
+then
+  echo "Cleaning..."
+  rm -r lib/*
+  rm -r utility/target utility/Cargo.lock
+  echo "'lib/*, utility/target, utility/Cargo.lock' have all been removed"
 else
   # -v must be at end -> verbose flag for unittest
   python3 test/test_main.py -v
