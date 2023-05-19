@@ -1,6 +1,9 @@
+import sys
+sys.path.append("./")
+
 import unittest
 
-import src.services.ebay.ebay as eb
+from src.services.ebay import ebay as eb
 
 class TestEbay(unittest.TestCase):
   def test_identifier(self):

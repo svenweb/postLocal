@@ -1,6 +1,9 @@
+import sys
+sys.path.append("./")
+
 import unittest
 
-import src.services.craigslist.craigslist as cl
+from src.services.craigslist import craigslist as cl
 
 class TestCraigslist(unittest.TestCase):
   def test_identifier(self):

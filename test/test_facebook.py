@@ -1,6 +1,9 @@
+import sys
+sys.path.append("./")
+
 import unittest
 
-import src.services.facebook.facebook as fb
+from src.services.facebook import facebook as fb
 
 class TestFacebook(unittest.TestCase):
   def test_identifier(self):

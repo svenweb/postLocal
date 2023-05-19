@@ -1,6 +1,9 @@
+import sys
+sys.path.append("./")
+
 import unittest
 
-import src.services.kijiji.kijiji as kj
+from src.services.kijiji import kijiji as kj
 
 class TestKijiji(unittest.TestCase):
   def test_identifier(self):
