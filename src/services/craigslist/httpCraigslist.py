@@ -75,8 +75,8 @@ def login(playwright):
     page = browser.new_page()
     page.goto('https://accounts.craigslist.org/login/')
     
-    page.fill('#inputEmailHandle', 'bit4104@gmail.com')
-    page.fill('#inputPassword', 'The1doogielester!')
+    page.fill('#inputEmailHandle', 'user-email')
+    page.fill('#inputPassword', 'user-password')
     page.click('#login')
     
     page.wait_for_load_state()
